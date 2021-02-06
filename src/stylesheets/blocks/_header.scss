@@ -6,3 +6,46 @@
     }
 }
 
+.main-navigation {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    background-color: #5E81FE;
+    width: $base * 6;
+    height: $base * 6;    
+    border-radius: 100%;
+}
+
+.nav-wrapper {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+
+    &__item {
+        // & + & {
+        // }
+
+        &-link {
+            margin-left: $base * 10;
+
+            text-decoration: none;
+            font-size: 12px;
+            @include quicksand;
+            color: #697ca6;
+            font-weight: $fw-medium;
+            transition: $transition;
+
+            &:hover {
+                color: #5e81fe;
+            }
+
+            &--active {
+                font-weight: $fw-bold;
+                color: #5e81fe;
+            }
+        }
+    }
+}
