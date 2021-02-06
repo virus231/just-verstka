@@ -1,0 +1,33 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #fff;
+  @include roboto;
+  line-height: 1.4;
+}
+
+.section {
+  &-outer {
+    border-bottom: 1px solid $color-divider;
+  }
+
+  &-inner {
+    max-width: 900px;
+    margin: 0 auto;
+    padding-top: $padding-vertical;
+    padding-bottom: $padding-vertical;
+
+    &--wide {
+      max-width: 1200px;
+    }
+  }
+}
+
