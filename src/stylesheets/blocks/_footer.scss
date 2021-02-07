@@ -6,3 +6,12 @@
         padding-bottom: $padding-vertical-sm;
     }
 }
+
+.copyright {
+    @include quicksand;
+    font-size: $fz-sm;
+    font-weight: $fw-medium;
+    margin-top: $base * 10;
+    color: #AEB8D0;
+    margin-left: $base * 16;
+}

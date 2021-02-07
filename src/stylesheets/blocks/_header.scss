@@ -1,5 +1,4 @@
 .section-header {
-
     .section-inner {
         padding-top: $padding-vertical-xs;
         padding-bottom: $padding-vertical-xs;
@@ -12,9 +11,9 @@
 }
 
 .logo {
-    background-color: #5E81FE;
+    background-color: $color-secondary;
     width: $base * 6;
-    height: $base * 6;    
+    height: $base * 6;
     border-radius: 100%;
 }
 
@@ -25,27 +24,57 @@
     display: flex;
 
     &__item {
-        // & + & {
-        // }
-
         &-link {
             margin-left: $base * 10;
 
             text-decoration: none;
-            font-size: 12px;
+            font-size: $fz-sm;
             @include quicksand;
-            color: #697ca6;
+            color: $color-primary;
             font-weight: $fw-medium;
             transition: $transition;
 
             &:hover {
-                color: #5e81fe;
+                color: $color-secondary;
             }
 
             &--active {
                 font-weight: $fw-bold;
-                color: #5e81fe;
+                color: $color-secondary;
             }
         }
     }
+}
+
+.socials {
+    margin-left: auto;
+
+    &-wrapper {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        &__item {
+            path {
+                fill: $color-primary;
+                transition: $transition;
+
+                &:hover {
+                    fill: $color-secondary;
+                }
+            }
+
+            &-link {
+                margin-left: $base * 10;
+                text-decoration: none;
+
+            }
+        }
+    }
+}
+
+.btn-wrapper {
+    margin-left: $base* 11;
 }

@@ -15,6 +15,9 @@ $fw-regular: 400;
 $fw-medium: 500;
 $fw-bold: 700;
 
+$fz-sm: 12px;
+$fz-md: 15px;
+
 $padding-vertical-xs: $base * 5;
 $padding-vertical-sm: $base * 15;
 $padding-vertical: $base * 30;
@@ -22,6 +25,8 @@ $padding-vertical: $base * 30;
 $color-divider: #d8e3fe;
 $transition: .33s;
 
+$color-primary: #697CA6;
+$color-secondary: #6188FF;
 
 
 @import '~normalize.css/normalize.css';
