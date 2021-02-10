@@ -14,7 +14,41 @@
         text-align: center;
 
         &-content {
+
+            h2 {
+                font-weight: $fw-light;
+
+                span {
+                    font-weight: $fw-bold;
+                }
+            }
             
+            .text {
+
+            }
         }
     }
+}
+
+.icon-play {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: $base* 13;
+    height: $base* 13;
+    border-radius: 100%;
+    background-color: #fff;
+    box-shadow: 0px 10px 50px rgba(201, 209, 231, 0.6);
+
+    &::before {
+        display: block;
+        width: 0;
+        height: 0;
+        content: '';
+        border-color: transparent;
+        border-style: solid;
+        border-width: 5px 10px;
+        border-left-color: #5E81FF;
+    }
+
 }
